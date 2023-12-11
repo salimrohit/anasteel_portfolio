@@ -1,0 +1,44 @@
+CDN - Content delivery network
+This is used to transfer the contents of one webpage to another
+
+Notes :
+vh(view port height) - it's a unit of measurement
+1vh = 19.2px
+
+Pseudo class
+-as a keyword added to a selector that specifies a special state of the selected elements 
+-eg. hover, visied, checked, active
+
+Q. Difference between section tags and div tags
+
+-----------------------------------------------
+Position: absoute 
+corresponds to the parent tag  
+
+position : relative
+positioned relative to its normal position
+
+-----------------------------------------------
+Descendant selectors
+
+-.parent_selector:hover .child_selector{}
+-eg. .images:hover #shape{
+    bottom: 70px;
+}
+------------------------------------------------
+CSS grid system (new property***)
+
+- when display:grid is given to an element, it automatically considers them as grids with rows and columns
+- column-gap = used to give size to the gap between columns
+- row-gap = used to give size to the gap between rows
+- gap =to give a common width between rows and columns
+
+Notes :
+1fr (frame) = 225px
+1rem = 16px
+
+keyframes (to animate elements)
+syntax : @keyframes mymove {
+    0%  
+}
+

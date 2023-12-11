@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- favicon (favorite icon) - to select an icon for the webpage-->
+    <link rel="icon" type="image/x-icon" href="https://png.pngtree.com/png-vector/20190307/ourmid/pngtree-vector-template-icon-png-image_779454.jpg">
+
+    <!-- google fonts (copy&paste) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+
+        <!-- tag used to make the navigation bar -->
+        <nav class="navbar">
+            <img id="logo" src="/images/bun-removebg-preview.png" alt="logo">
+            <ul>
+                <!-- href="#id" links the anchor tag to that particular section of the given id -->
+                <!-- # is used as the section to be linked is given an id (id selector)-->
+
+                <li class="listitem"><a class="links" href="#home">HOME</a></li>
+                <li class="listitem"><a class="links" href="#about">ABOUT</a></li>
+                <li class="listitem"><a class="links" href="#skill">SKILL</a></li>
+                <li class="listitem"><a class="links" href="#contact">CONTACT</a></li>
+            </ul>
+        
+
+        </nav>
+
+        <!-- HOME -->
+        <!-- tag used to create sections on the webpage -->
+        <section id="home">
+            <div class="title">
+                <h1 class="title_h1">I am Ana <span id="lastname">Steel</span> </h1>
+                <p>This is my official Portfolio website to describe all <br>
+                    Details and work experience in Web Development                 
+                </p>
+                <a id="download" href="./images/one plus 9r invoice.pdf" download="">DOWNLOAD CV</a>
+
+            </div>
+            <div class="images">                                
+                <img class="imageGroup" id="shape" src="./images/amoeba-removebg-preview.png" alt="shape">
+                <img class="imageGroup" id="girl" src="./images/shorthair-removebg-preview.png" alt="girl">
+               
+            </div>  
+        </section>
+
+
+         <!-- ABOUT -->
+        <section id="about">
+            <div class="heading">
+                <h2>About me</h2>
+                <span>Introduction</span>
+            </div>
+
+            <div class="about_content">
+                <div class="about_image">
+                    <img src="./images/about.avif" alt="about">
+                </div>
+                <div class="about_details">
+                    <div class="about_para">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, sint. Magnam, porro placeat. Ducimus neque magnam eos laborum esse ratione, dolorem sapiente rerum eum quia culpa, delectus, dolorum iusto voluptatem.</p>
+                    </div>
+                    <div class="information">
+                        <div class="info-box"><i class="fa-solid fa-user"></i>
+                            <!-- span tag is used because it always starts in the same line, whereas a p tag would've displayed the text in the next line -->
+                             <span>Ana Steel</span>
+                        </div>
+                        <div class="info-box"><i class="fa-solid fa-phone"></i>
+                             <span>+91 8714226844</span>
+                        </div>
+                        <div class="info-box"><i class="fa-solid fa-envelope"></i>
+                              <span>anasteel@gmail.com</span>
+                        </div>
+                        <div class="info-box"><i class="fa-brands fa-github"></i>
+                            <span>AnaSteel</span>
+                        </div>
+
+                    </div>
+                    
+
+                    
+                </div>
+            </div>           
+        </section>
+        
+         <!-- SKILL -->
+         <section id="skill">                        
+            <div class="heading">
+                <h2>Skills</h2>
+                <span>My Skills</span>
+            </div>
+
+
+            <div class="skill_container">
+                <div class="progress_container">
+                    <div class="progress_bar">
+                        <h3>HTML</h3>
+                        <span>95%</span>
+                        <div class="base_bar"></div>
+                        <!-- class="name1(space)name2", two names for styling reasons -->
+                        <div class="base_bar html_bar"></div>
+
+                    </div>
+                    <div class="progress_bar">
+                        <h3>CSS</h3>
+                        <span>88%</span>
+                        <div class="base_bar"></div>
+                        <div class="base_bar css_bar"></div>
+
+                    </div>
+                    <div class="progress_bar">
+                        <h3>JS</h3>
+                        <span>89%</span>
+                        <div class="base_bar"></div>
+                        <div class="base_bar js_bar"></div>
+
+                    </div>
+                    <div class="progress_bar">
+                        <h3>REACT</h3>
+                        <span>85%</span>
+                        <div class="base_bar"></div>
+                        <div class="base_bar react_bar"></div>
+
+                    </div>
+
+                </div>
+                <div class="skill_img">
+                    <img src="./images/manyhands-removebg-preview.png" alt="no image">
+
+                </div>
+
+            </div>
+
+         </section>
+            
+         <!-- CONTACT -->
+         <section id="contact">
+            <div class="heading">
+                <h2>Contact</h2>
+                <span>My Contacts</span>
+            </div>   
+            
+            <div class="icon_set"> 
+
+                <div class="icon">
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                </div>
+
+                <div class="icon">
+                    <a href="https://github.com/" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                </div>
+
+                <div class="icon">
+                    <a href="https://twitter.com/i/flow/login" target="_blank">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+
+                </div>
+
+                <div class="icon">
+                    <a href="https://www.whatsapp.com/" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+                <div class="icon">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                </div>
+
+                <div class="icon">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                </div>                 
+
+                
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <!-- used to create a footer tag (new tag**) -->
+        <footer>
+            <p>© My Protfolio Design 2023, All Rights Reserved ® Ana Steel</p>
+            <div class="up_arrow">
+                <a href="#container">
+                    <!-- 'fa-2x' is used to increase the size of the icon -->
+                    <!-- 1x is default -->
+                    <i class="fa-solid fa-arrow-up fa-2x"></i>
+                </a>
+
+
+            </div>
+        </footer>
+    </div>
+</body>
+     
+
+</html>

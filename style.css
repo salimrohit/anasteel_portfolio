@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* font-family is used to customize the font */
+    /* for fonts from google fonts, copy and paste the corresponding CSS rules here */
+    font-family: 'Libre Franklin', sans-serif;
+} 
+
+#container {
+    width: 100%;
+    height: 100vh; /* 1vh=19.2px  ; 100vh = full screen height */
+    position: relative; /* positioned relative to its normal position */
+    background-color: aliceblue;
+}
+
+#logo{
+    width: 120px;
+}
+
+.navbar{
+    /* used to display all the contents in the children tag (<img> & <ul>) side by side */
+    display: flex;
+    /* aligns the two tags on either side of the screen */
+    /* justify-content: center = aligns the items horizontally*/
+    justify-content: space-between;    
+    /* to align items vertically center */
+    align-items: center;
+    width: 85%;
+    margin-left: 100px;    
+}
+
+.listitem{
+    /* when applied to PARENT TAG, to dislay the contents of the CHILD TAG side by side /horizontally */
+    /* when its applied to a TAG, it respects both top and bottom margins and paddings */
+    display: inline-block;
+    /* this property removes any styling that list has */
+    list-style: none;
+    /* margin: top/bottom left/right */
+    margin: 10px 20px;
+}
+
+.links{
+    /* removes the underline styling of the links */
+    text-decoration: none; 
+    color: black;
+    /* the thickness of the font */
+    font-weight: bolder; 
+
+}
+
+/* :hover is a pseudo class used to changes the properties of the class when the hovers over it */
+.links:hover{
+    color: red;
+}
+
+.title{
+    margin-left:8%;
+    margin-top:13% ;
+}
+
+.title_h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+#lastname{
+    color: orange;
+}
+
+#download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 30px 0px;
+    /* here, display: inline-block affects only the margins and padding of the anchor tag */
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.images{
+    width: 45%;
+    height: 85%;
+    /*if position: absolute was not given here, imgaes_div would've aligned with respect the container_div */
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+}
+
+.imageGroup{
+    /* here, position: absolute overlaps the images over each other */
+    position: absolute;
+    height: 100%;
+    bottom: 0px; /* initial values (before hovering) */
+    left: 50%; /* initial values (before hovering) */
+    /* this is used to nullify the effect of initial values while viewing the page (to remove the left:50%) */
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+}
+
+.images:hover #shape{
+    /* final values for the transition of "shape" image (# beacuse id selector)*/
+    bottom: 70px;
+}
+
+.images:hover #girl{
+    /* final values for the transition of "girl" image (# beacuse id selector)*/
+    left:40%;
+}
+
+#about{
+    margin: 13% 8% 0px 8%;
+}
+
+.heading{
+    text-align: center;
+}
+
+/* parent_selector(space)child_selector{} */
+.heading h2{   
+    font-size: 35px;
+}
+
+.heading span{
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}   
+
+.about_content{
+    /* to display the two divs inside about_content_div as a grid */
+   display: grid;
+   grid-template-columns: repeat(2,1fr); /* 1 fr=225px */
+   column-gap: 2 rem; /* 1 rem=16px */
+   margin-top: 2rem;
+}
+
+.about_image{
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+.about_para p{
+    /* for proper text align */
+    text-align: justify;
+    font-size: 18px;
+    /* 800 is the font-Weight for bold texts */
+    /* no units for font-Weight */
+    font-weight: 550;
+}
+
+.information{
+    margin-top: 1rem;
+}
+
+.info-box{
+    margin-bottom: 1rem;
+    /* used to align the contents to the center */
+    /* no noticable difference in this case */
+    align-items: center;
+    font-size: 18px;
+}
+.info-box span{
+    margin-left: 1rem;
+}
+
+#skill{
+    margin:13% 8% 0px 8%;
+}
+
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-top: 2rem;
+
+}
+
+.skill_img{
+    width: 50%;
+    padding-left: 4rem;
+    /* object-position property is used to specify how an image or a video to be positioned with the X&Y coordinates */
+    /* center wrt the divison containing it */
+    object-position: center;
+}
+
+.progress_bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem 0px;
+    /* border: 1px solid green; (for reference)*/ 
+    position: relative;
+
+}
+
+.progress_bar span{
+    font-size: 1.2rem; 
+    font-weight: bolder;
+}
+
+.base_bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0.5rem ;
+}
+
+.html_bar{
+    background-color: orange;
+    width: 95%;
+}
+
+.css_bar{
+    background-color: orange;
+    width: 88%;
+}
+
+.js_bar{
+    background-color: orange;
+    width: 89%;
+}
+
+.react_bar{
+    background-color: orange;
+    width: 85%;
+}
+
+.icon_set{
+    display: flex;
+    /* horizontally center */
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    
+}
+
+.icon , .up_arrow {
+    width: 60px;                                /* }     (border radius 50% applies only for squares)     */
+    height: 60px;                               /* |---- to shape the divs into circles                   */  
+    border-radius: 50%;                         /* }                                                      */
+    /*border: 1px solid black;                                     for reference                          */
+    display: flex;                              /* }                                                      */
+    justify-content: center;                    /* |---- to centralize any content inside a div           */
+    align-items: center;                        /* }                                                      */
+    /* spacing icons only required values for left/right */
+    margin: 0px 10px;
+} 
+
+/* to style the icons */
+.icon i, .up_arrow i{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right , yellow,rgb(252, 59, 6));
+}
+
+.icon:hover i{
+    color: white;
+    animation: shake 0.85s;
+}
+@keyframes shake {
+    10%{ 
+        transform: rotate(15deg);        
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }    
+}
+
+footer p{
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bolder;
+}
+
+.up_arrow{
+    background-image: linear-gradient(to bottom right , yellow,rgb(252, 59, 6));
+    float: right; /* first appearance of float */
+    margin: 10px 20px 50px 0px;    
+}
+
+.up_arrow:hover i{
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
